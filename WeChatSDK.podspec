@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.requires_arc      = true
   s.frameworks        = "SystemConfiguration"
   s.libraries         = "z", "sqlite3.0", "c++"
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
   s.public_header_files = "WeChatSDK/*.h"
+  s.source_files      = "WeChatSDK/*.h"
   s.vendored_libraries = "WeChatSDK/libWeChatSDK.a"
 end
